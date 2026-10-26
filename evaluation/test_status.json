@@ -1,0 +1,11 @@
+{
+  "tests": 54,
+  "errors": 0,
+  "failures": 0,
+  "skipped": 0,
+  "passed": 54,
+  "status": "passed",
+  "recorded_utc": "2026-10-25T17:38:29.031199+00:00",
+  "source": "evaluation/pytest-results.xml",
+  "command": ".venv/Scripts/python.exe -m pytest -q --basetemp=.pytest-tmp-final --junitxml=evaluation/pytest-results.xml"
+}

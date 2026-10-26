@@ -1,0 +1,14 @@
+.venv/
+.downloads/
+__pycache__/
+.pytest_cache/
+.pytest-tmp*/
+*.egg-info/
+.env
+.streamlit/secrets.toml
+data/uploads/
+data/index/
+data/raw/
+data/corpus/usda*.txt
+data/corpus/jpaa-2436.pdf
+*.log

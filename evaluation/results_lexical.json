@@ -1,0 +1,645 @@
+{
+  "timestamp_utc": "2026-10-25T17:39:18.965286+00:00",
+  "python": "3.14.7",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "settings": {
+    "backend": "lexical",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": null,
+    "local_only": true,
+    "chunk_size": 110,
+    "overlap": 20,
+    "top_k": 3,
+    "threshold": 0.05,
+    "max_tools": 4
+  },
+  "setup_ms": 2217.7475999997114,
+  "corpus_documents": 4,
+  "chunks": 72,
+  "resolved_model_revision": null,
+  "manifest_sha256": "4e37fc751fcc7ac2d21c519bde1a816374116b83eeaf7a3c475f85d4969783f8",
+  "dataset_sha256": "0bee7729e3a512b7c9c9bc12d9ae60b1213bc41c8b955702e38796cb4e5a5cd9",
+  "gold_sha256": "46175300ec8026b6feead3fba985086038d82087be10137a49eb2268a76b8a05",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "langgraph": "1.2.17",
+    "sentence-transformers": "6.2.0",
+    "faiss-cpu": "1.15.1"
+  },
+  "source_label_validation_errors": [],
+  "summary": {
+    "lexical_baseline": {
+      "cases": 12,
+      "recall_at_k": {
+        "mean": 0.9166666666666666,
+        "n": 12
+      },
+      "mrr": {
+        "mean": 0.8194444444444444,
+        "n": 12
+      },
+      "answer_span_present": {
+        "mean": 0.9166666666666666,
+        "n": 12
+      },
+      "citation_membership": {
+        "mean": 1,
+        "n": 12
+      },
+      "response_ms": {
+        "mean": 1.3287166663455234,
+        "n": 12
+      },
+      "retrieval_ms": {
+        "mean": 1.2824166666784247,
+        "n": 12
+      },
+      "tool_calls": {
+        "mean": 1,
+        "n": 12
+      },
+      "evidence_response_ms": {
+        "mean": 1.3287166663455234,
+        "n": 12
+      },
+      "evidence_retrieval_ms": {
+        "mean": 1.2824166666784247,
+        "n": 12
+      },
+      "evidence_tool_calls": {
+        "mean": 1,
+        "n": 12
+      }
+    },
+    "lexical_hybrid_agent": {
+      "cases": 20,
+      "recall_at_k": {
+        "mean": 0.9166666666666666,
+        "n": 12
+      },
+      "mrr": {
+        "mean": 0.8194444444444444,
+        "n": 12
+      },
+      "answer_span_present": {
+        "mean": 0.9166666666666666,
+        "n": 12
+      },
+      "citation_membership": {
+        "mean": 1,
+        "n": 16
+      },
+      "routing_correct": {
+        "mean": 1,
+        "n": 8
+      },
+      "workflow_completed": {
+        "mean": 0.75,
+        "n": 8
+      },
+      "abstention_correct": {
+        "mean": 1,
+        "n": 4
+      },
+      "analysis_filter_correct": {
+        "mean": 1,
+        "n": 4
+      },
+      "numeric_correct": {
+        "mean": 1,
+        "n": 3
+      },
+      "gold_numeric_correct": {
+        "mean": 1,
+        "n": 2
+      },
+      "response_ms": {
+        "mean": 130.94665999960853,
+        "n": 20
+      },
+      "retrieval_ms": {
+        "mean": 2.9143499996280298,
+        "n": 20
+      },
+      "tool_calls": {
+        "mean": 2.05,
+        "n": 20
+      },
+      "evidence_response_ms": {
+        "mean": 206.79966666648397,
+        "n": 12
+      },
+      "evidence_retrieval_ms": {
+        "mean": 4.322599999189454,
+        "n": 12
+      },
+      "evidence_tool_calls": {
+        "mean": 2,
+        "n": 12
+      }
+    }
+  },
+  "details": [
+    {
+      "system": "lexical_baseline",
+      "id": "r01",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 2.079099998809397,
+      "response_ms": 2.133100002538413,
+      "tool_calls": 1,
+      "retrieved": [
+        "f45b7c06de36092cf411",
+        "f6d49b39fe3db97b1742",
+        "f5160624b146ea22f46c"
+      ]
+    },
+    {
+      "system": "lexical_baseline",
+      "id": "r02",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 1.250200002687052,
+      "response_ms": 1.2884999960078858,
+      "tool_calls": 1,
+      "retrieved": [
+        "f45b7c06de36092cf411",
+        "f5160624b146ea22f46c",
+        "f6d49b39fe3db97b1742"
+      ]
+    },
+    {
+      "system": "lexical_baseline",
+      "id": "r03",
+      "recall_at_k": 1.0,
+      "mrr": 0.3333333333333333,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 1.1397999987821095,
+      "response_ms": 1.1731999984476715,
+      "tool_calls": 1,
+      "retrieved": [
+        "f6d49b39fe3db97b1742",
+        "f45b7c06de36092cf411",
+        "f5160624b146ea22f46c"
+      ]
+    },
+    {
+      "system": "lexical_baseline",
+      "id": "r04",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 1.1804000023403205,
+      "response_ms": 1.2099999948986806,
+      "tool_calls": 1,
+      "retrieved": [
+        "f5160624b146ea22f46c",
+        "f45b7c06de36092cf411",
+        "f6d49b39fe3db97b1742"
+      ]
+    },
+    {
+      "system": "lexical_baseline",
+      "id": "r05",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 1.1620000004768372,
+      "response_ms": 1.1947000020882115,
+      "tool_calls": 1,
+      "retrieved": [
+        "f45b7c06de36092cf411",
+        "16e7de551e66c2360795",
+        "f5160624b146ea22f46c"
+      ]
+    },
+    {
+      "system": "lexical_baseline",
+      "id": "r06",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 1.1742999995476566,
+      "response_ms": 1.2067999996361323,
+      "tool_calls": 1,
+      "retrieved": [
+        "f6d49b39fe3db97b1742",
+        "f45b7c06de36092cf411",
+        "f5160624b146ea22f46c"
+      ]
+    },
+    {
+      "system": "lexical_baseline",
+      "id": "r07",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 1.2618000037036836,
+      "response_ms": 1.3247999959276058,
+      "tool_calls": 1,
+      "retrieved": [
+        "d0db38904e4c06da0ce8",
+        "4ed49de523bd6e89a1ab",
+        "40a0925ec7c7b6ec8bfc"
+      ]
+    },
+    {
+      "system": "lexical_baseline",
+      "id": "r08",
+      "recall_at_k": 1.0,
+      "mrr": 0.5,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 1.150299998698756,
+      "response_ms": 1.2082000030204654,
+      "tool_calls": 1,
+      "retrieved": [
+        "eaebf6eea5d915d42e5e",
+        "9e59aeedb02c8f9a1a79",
+        "3b077e85c761fd19bfb5"
+      ]
+    },
+    {
+      "system": "lexical_baseline",
+      "id": "r09",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 1.207799999974668,
+      "response_ms": 1.2768000015057623,
+      "tool_calls": 1,
+      "retrieved": [
+        "d5f83f28e24f44456227",
+        "9b8aec29f8c0efb04216",
+        "748d3d52e0704f612e0e"
+      ]
+    },
+    {
+      "system": "lexical_baseline",
+      "id": "r10",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 1.185000000987202,
+      "response_ms": 1.2354999998933636,
+      "tool_calls": 1,
+      "retrieved": [
+        "9f2d2f8333f805a6d530",
+        "0ed9c890df9b3ccd7801",
+        "d0db38904e4c06da0ce8"
+      ]
+    },
+    {
+      "system": "lexical_baseline",
+      "id": "r11",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 1.160599997092504,
+      "response_ms": 1.2166000014985912,
+      "tool_calls": 1,
+      "retrieved": [
+        "9e59aeedb02c8f9a1a79",
+        "2cbcaf0177be9b31ba44",
+        "d8f9bc4bebf895b3e8e4"
+      ]
+    },
+    {
+      "system": "lexical_baseline",
+      "id": "r12",
+      "recall_at_k": 0.0,
+      "mrr": 0.0,
+      "answer_span_present": false,
+      "citation_membership": true,
+      "retrieval_ms": 1.4376999970409088,
+      "response_ms": 1.4764000006834976,
+      "tool_calls": 1,
+      "retrieved": [
+        "0ed9c890df9b3ccd7801",
+        "c2ba43e01b870c0949d8",
+        "40a0925ec7c7b6ec8bfc"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r01",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 5.454700003610924,
+      "response_ms": 2271.817300003022,
+      "tool_calls": 2,
+      "retrieved": [
+        "f45b7c06de36092cf411",
+        "f5160624b146ea22f46c",
+        "f6d49b39fe3db97b1742"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r02",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 4.277299995010253,
+      "response_ms": 20.025799996801652,
+      "tool_calls": 2,
+      "retrieved": [
+        "f45b7c06de36092cf411",
+        "f5160624b146ea22f46c",
+        "f6d49b39fe3db97b1742"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r03",
+      "recall_at_k": 1.0,
+      "mrr": 0.3333333333333333,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 3.7198999998508953,
+      "response_ms": 18.262899997353088,
+      "tool_calls": 2,
+      "retrieved": [
+        "f6d49b39fe3db97b1742",
+        "f45b7c06de36092cf411",
+        "f5160624b146ea22f46c"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r04",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 4.134499999054242,
+      "response_ms": 23.015999999188352,
+      "tool_calls": 2,
+      "retrieved": [
+        "f5160624b146ea22f46c",
+        "f45b7c06de36092cf411",
+        "f6d49b39fe3db97b1742"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r05",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 5.640700001094956,
+      "response_ms": 25.255000000470318,
+      "tool_calls": 2,
+      "retrieved": [
+        "f45b7c06de36092cf411",
+        "16e7de551e66c2360795",
+        "f5160624b146ea22f46c"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r06",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 2.595999998447951,
+      "response_ms": 16.705000001820736,
+      "tool_calls": 2,
+      "retrieved": [
+        "f6d49b39fe3db97b1742",
+        "f45b7c06de36092cf411",
+        "f5160624b146ea22f46c"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r07",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 4.342200001701713,
+      "response_ms": 19.65110000310233,
+      "tool_calls": 2,
+      "retrieved": [
+        "d0db38904e4c06da0ce8",
+        "4ed49de523bd6e89a1ab",
+        "40a0925ec7c7b6ec8bfc"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r08",
+      "recall_at_k": 1.0,
+      "mrr": 0.5,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 4.1512999960104935,
+      "response_ms": 18.089299999701325,
+      "tool_calls": 2,
+      "retrieved": [
+        "eaebf6eea5d915d42e5e",
+        "9e59aeedb02c8f9a1a79",
+        "3b077e85c761fd19bfb5"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r09",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 2.6956000001518987,
+      "response_ms": 15.939299999445211,
+      "tool_calls": 2,
+      "retrieved": [
+        "d5f83f28e24f44456227",
+        "9b8aec29f8c0efb04216",
+        "748d3d52e0704f612e0e"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r10",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 5.0355999992461875,
+      "response_ms": 18.07849999750033,
+      "tool_calls": 2,
+      "retrieved": [
+        "9f2d2f8333f805a6d530",
+        "0ed9c890df9b3ccd7801",
+        "d0db38904e4c06da0ce8"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r11",
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "answer_span_present": true,
+      "citation_membership": true,
+      "retrieval_ms": 2.914999997301493,
+      "response_ms": 16.330999998899642,
+      "tool_calls": 2,
+      "retrieved": [
+        "9e59aeedb02c8f9a1a79",
+        "2cbcaf0177be9b31ba44",
+        "9f2d2f8333f805a6d530"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "r12",
+      "recall_at_k": 0.0,
+      "mrr": 0.0,
+      "answer_span_present": false,
+      "citation_membership": true,
+      "retrieval_ms": 6.908399998792447,
+      "response_ms": 18.424800000502728,
+      "tool_calls": 2,
+      "retrieved": [
+        "40a0925ec7c7b6ec8bfc",
+        "0ed9c890df9b3ccd7801",
+        "c2ba43e01b870c0949d8"
+      ]
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "a01",
+      "routing_correct": true,
+      "workflow_completed": true,
+      "response_ms": 25.487999999313615,
+      "retrieval_ms": 0.0,
+      "tool_calls": 2,
+      "errors": [],
+      "analysis_filter_correct": true,
+      "numeric_correct": true,
+      "citation_membership": true,
+      "gold_numeric_correct": true
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "a02",
+      "routing_correct": true,
+      "workflow_completed": true,
+      "response_ms": 18.46349999686936,
+      "retrieval_ms": 0.0,
+      "tool_calls": 2,
+      "errors": [],
+      "analysis_filter_correct": true,
+      "numeric_correct": true,
+      "citation_membership": true,
+      "gold_numeric_correct": true
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "a03",
+      "routing_correct": true,
+      "workflow_completed": true,
+      "response_ms": 20.333600004960317,
+      "retrieval_ms": 3.428900003200397,
+      "tool_calls": 4,
+      "errors": [],
+      "analysis_filter_correct": true,
+      "numeric_correct": true,
+      "citation_membership": true
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "a04",
+      "routing_correct": true,
+      "workflow_completed": true,
+      "response_ms": 22.289300002739765,
+      "retrieval_ms": 0.0,
+      "tool_calls": 2,
+      "errors": [],
+      "analysis_filter_correct": true,
+      "citation_membership": true
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "u01",
+      "routing_correct": true,
+      "workflow_completed": true,
+      "response_ms": 13.081700002658181,
+      "retrieval_ms": 0.0,
+      "tool_calls": 1,
+      "errors": [
+        "Insufficient evidence; no supported answer is available."
+      ],
+      "abstention_correct": true
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "u02",
+      "routing_correct": true,
+      "workflow_completed": false,
+      "response_ms": 12.76559999678284,
+      "retrieval_ms": 0.0,
+      "tool_calls": 2,
+      "errors": [
+        "Unrecognized or unavailable country/region: Punjab; use explicit dataset controls",
+        "Insufficient evidence; no supported answer is available."
+      ],
+      "abstention_correct": true
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "u03",
+      "routing_correct": true,
+      "workflow_completed": false,
+      "response_ms": 9.192699995764997,
+      "retrieval_ms": 0.0,
+      "tool_calls": 2,
+      "errors": [
+        "Dataset contains national cereal aggregates only; requested crop/local/environmental variable unavailable",
+        "Insufficient evidence; no supported answer is available."
+      ],
+      "abstention_correct": true
+    },
+    {
+      "system": "lexical_hybrid_agent",
+      "id": "u04",
+      "routing_correct": true,
+      "workflow_completed": true,
+      "response_ms": 15.722799995273817,
+      "retrieval_ms": 2.986899999086745,
+      "tool_calls": 2,
+      "errors": [
+        "Source applicability check rejected evidence with an unreviewed or mismatched crop/region scope. The available experiment does not establish a recommendation for the requested setting.",
+        "Insufficient evidence; no supported answer is available."
+      ],
+      "abstention_correct": true
+    }
+  ],
+  "limitations": [
+    "Development questions authored and source-reviewed by implementing agent, not independently human annotated.",
+    "Single local timing observation per case; warm inference, no statistical significance claim.",
+    "Citation membership is exact excerpt membership, not factual or entailment scoring.",
+    "Gold answer span presence is a narrow proxy, not complete answer quality.",
+    "Baseline is retrieval plus extracts; agent workflows are evaluated only for the enhanced system.",
+    "No paid LLM calls; Groq live generation not run."
+  ]
+}

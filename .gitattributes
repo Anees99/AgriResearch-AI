@@ -1,0 +1,9 @@
+# Keep source snapshots byte-identical so provenance hashes survive cloning.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+data/** -text
+evaluation/** -text
+source_manifest.csv -text

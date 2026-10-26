@@ -1,0 +1,22 @@
+[
+  {"id":"r01","question":"What units are used to measure cereal yield?","evidence":[{"document_id":"AG.YLD.CREL.KG","span":"kilograms per hectare of harvested land"}],"answer_contains":"kilograms per hectare"},
+  {"id":"r02","question":"Which crops are included in cereal yield?","evidence":[{"document_id":"AG.YLD.CREL.KG","span":"wheat, rice, maize, barley, oats"}],"answer_contains":"wheat, rice, maize"},
+  {"id":"r03","question":"Does cereal production include crops harvested for silage?","evidence":[{"document_id":"AG.PRD.CREL.MT","span":"silage and those used for grazing are excluded"}],"answer_contains":"excluded"},
+  {"id":"r04","question":"Is cereal production measured in metric tons?","evidence":[{"document_id":"AG.PRD.CREL.MT","span":"Cereal production (metric tons)"}],"answer_contains":"metric tons"},
+  {"id":"r05","question":"How is the harvest year assigned by FAO for cereal yield?","evidence":[{"document_id":"AG.YLD.CREL.KG","span":"calendar year in which the bulk of the harvest took place"}],"answer_contains":"bulk of the harvest"},
+  {"id":"r06","question":"What does land under cereal production measure?","evidence":[{"document_id":"AG.LND.CREL.HA","span":"Land under cereal production"}],"answer_contains":"Land under cereal production"},
+  {"id":"r07","question":"Which wheat variety was used in the NARC supplemental irrigation experiment?","evidence":[{"document_id":"jpaa-2436","page":2,"span":"wheat crop variety Chakwal -50"}],"answer_contains":"Chakwal -50","gold_note":"pypdf inserts a space before the cultivar hyphen; original PDF is Chakwal-50."},
+  {"id":"r08","question":"What experimental design and replications were used in the wheat irrigation experiment?","evidence":[{"document_id":"jpaa-2436","page":2,"span":"RCBD with three replications"}],"answer_contains":"RCBD with three replications"},
+  {"id":"r09","question":"Which statistical test compared wheat irrigation treatment means?","evidence":[{"document_id":"jpaa-2436","page":4,"span":"Honestly Significant Difference"}],"answer_contains":"Honestly Significant Difference"},
+  {"id":"r10","question":"What soil texture was recorded in the NARC wheat experiment?","evidence":[{"document_id":"jpaa-2436","page":3,"span":"Sandy loam"}],"answer_contains":"Sandy loam"},
+  {"id":"r11","question":"Which supplemental irrigation depths were applied with portable sprinklers?","evidence":[{"document_id":"jpaa-2436","page":2,"span":"Additional irrigations of 10 mm and 25 mm"}],"answer_contains":"10 mm and 25 mm"},
+  {"id":"r12","question":"What seasonal rainfall was reported in the wheat paper abstract?","evidence":[{"document_id":"jpaa-2436","page":1,"span":"257.7 mm rainfall"}],"answer_contains":"257.7 mm"},
+  {"id":"a01","question":"Calculate Pakistan average cereal yield in 2020 and 2021","tools":["analysis","verify"],"analysis":{"operation":"summary","variable":"yield","country":"Pakistan","years":[2020,2021]},"expected_result":{"mean":3421.4,"n":2},"gold_note":"Source CSV values inspected: 3353.4 and 3489.4 kg/ha; arithmetic mean (3353.4+3489.4)/2."},
+  {"id":"a02","question":"Compare Pakistan cereal production in 2021 and 2022","tools":["analysis","verify"],"analysis":{"operation":"yoy","variable":"production","country":"Pakistan","years":[2021,2022]},"expected_result":{"absolute_change":-2785407.0},"gold_note":"Source CSV values inspected: 51304736 and 48519329 metric tonnes; later minus earlier."},
+  {"id":"a03","question":"Report on cereal harvest evidence and Pakistan average cereal yield","tools":["search","analysis","report","verify"],"analysis":{"operation":"summary","variable":"yield","country":"Pakistan"}},
+  {"id":"a04","question":"Summarize missing data and outlier cereal yield observations for Pakistan","tools":["analysis","verify"],"analysis":{"operation":"quality","variable":"yield","country":"Pakistan"}},
+  {"id":"u01","question":"Who won the football world cup?","tools":["verify"],"abstain":true},
+  {"id":"u02","question":"Calculate wheat yield for Punjab in 2022","tools":["analysis","verify"],"abstain":true},
+  {"id":"u03","question":"Calculate Pakistan rainfall data in 2020","tools":["analysis","verify"],"abstain":true},
+  {"id":"u04","question":"Which irrigation schedule is optimal for rice in Sindh?","tools":["search","verify"],"abstain":true,"gold_note":"Corpus has a NARC wheat experiment and national cereal definitions, not a rice irrigation experiment in Sindh. Tests agricultural near-topic false positives."}
+]

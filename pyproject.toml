@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agriresearch-ai"
+version = "0.1.0"
+description = "Evidence-first agricultural retrieval and bounded research workflows"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["agriresearch*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: uses actual corpus, models or UI"]

@@ -1,0 +1,27 @@
+Python 3.14.7
+Windows-10-10.0.19045-SP0
+Local venv reuses preinstalled packages through --system-site-packages.
+This is an environment record, not a complete portable transitive lockfile.
+
+numpy==2.5.3
+pandas==3.0.6
+streamlit==1.65.0
+langgraph==1.2.17
+langchain-core==1.7.0
+langgraph-checkpoint==4.3.0
+langgraph-prebuilt==1.1.1
+langgraph-sdk==0.4.9
+sentence-transformers==6.2.0
+faiss-cpu==1.15.1
+torch==2.14.1
+transformers==5.20.2
+huggingface-hub==2.3.0
+tokenizers==0.23.3
+safetensors==0.8.0
+scikit-learn==1.9.1
+scipy==1.18.1
+pypdf==6.21.2
+requests==2.34.2
+python-dotenv==1.2.4
+pytest==9.1.1
+reportlab==5.0.1

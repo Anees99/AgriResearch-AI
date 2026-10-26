@@ -1,0 +1,171 @@
+[
+  {
+    "document_id": "AG.YLD.CREL.KG",
+    "title": "Cereal yield (kg per hectare)",
+    "author": "World Bank / FAO",
+    "date": "unknown (live indicator metadata)",
+    "url": "https://api.worldbank.org/v2/indicator/AG.YLD.CREL.KG?format=json",
+    "kind": "document",
+    "path": "data/corpus/AG.YLD.CREL.KG.txt",
+    "license": "CC BY 4.0 (WDI indicator page)",
+    "license_url": "https://data.worldbank.org/indicator/AG.YLD.CREL.KG",
+    "accessed_utc": "2026-10-25T16:36:57.306329+00:00",
+    "status": "downloaded",
+    "sha256": "5cfe48dc476589750d660e9deafaaf89712f75ab4186fc76d121e705cdecf523",
+    "crops": [
+      "cereals"
+    ],
+    "regions": [
+      "national"
+    ],
+    "evidence_type": "statistical_definition"
+  },
+  {
+    "document_id": "AG.YLD.CREL.KG-DATA",
+    "title": "Cereal yield (kg per hectare) observations 2010-2023",
+    "author": "World Bank / FAO",
+    "date": "2026-10-08",
+    "url": "https://api.worldbank.org/v2/country/PAK;IND;BGD/indicator/AG.YLD.CREL.KG?format=json&date=2010:2023&per_page=1000",
+    "kind": "dataset",
+    "path": "data/processed/cereals.csv",
+    "license": "CC BY 4.0 (WDI indicator page)",
+    "license_url": "https://data.worldbank.org/indicator/AG.YLD.CREL.KG",
+    "accessed_utc": "2026-10-25T16:36:57.306329+00:00",
+    "status": "downloaded",
+    "sha256": "0bee7729e3a512b7c9c9bc12d9ae60b1213bc41c8b955702e38796cb4e5a5cd9"
+  },
+  {
+    "document_id": "AG.PRD.CREL.MT",
+    "title": "Cereal production (metric tons)",
+    "author": "World Bank / FAO",
+    "date": "unknown (live indicator metadata)",
+    "url": "https://api.worldbank.org/v2/indicator/AG.PRD.CREL.MT?format=json",
+    "kind": "document",
+    "path": "data/corpus/AG.PRD.CREL.MT.txt",
+    "license": "CC BY 4.0 (WDI indicator page)",
+    "license_url": "https://data.worldbank.org/indicator/AG.PRD.CREL.MT",
+    "accessed_utc": "2026-10-25T16:36:57.306329+00:00",
+    "status": "downloaded",
+    "sha256": "5269beab4b943a9c99d99829d5834611e70dbd7de2afde35d0564f71e153831c",
+    "crops": [
+      "cereals"
+    ],
+    "regions": [
+      "national"
+    ],
+    "evidence_type": "statistical_definition"
+  },
+  {
+    "document_id": "AG.PRD.CREL.MT-DATA",
+    "title": "Cereal production (metric tons) observations 2010-2023",
+    "author": "World Bank / FAO",
+    "date": "2026-10-08",
+    "url": "https://api.worldbank.org/v2/country/PAK;IND;BGD/indicator/AG.PRD.CREL.MT?format=json&date=2010:2023&per_page=1000",
+    "kind": "dataset",
+    "path": "data/processed/cereals.csv",
+    "license": "CC BY 4.0 (WDI indicator page)",
+    "license_url": "https://data.worldbank.org/indicator/AG.PRD.CREL.MT",
+    "accessed_utc": "2026-10-25T16:36:57.306329+00:00",
+    "status": "downloaded",
+    "sha256": "0bee7729e3a512b7c9c9bc12d9ae60b1213bc41c8b955702e38796cb4e5a5cd9"
+  },
+  {
+    "document_id": "AG.LND.CREL.HA",
+    "title": "Land under cereal production (hectares)",
+    "author": "World Bank / FAO",
+    "date": "unknown (live indicator metadata)",
+    "url": "https://api.worldbank.org/v2/indicator/AG.LND.CREL.HA?format=json",
+    "kind": "document",
+    "path": "data/corpus/AG.LND.CREL.HA.txt",
+    "license": "CC BY 4.0 (WDI indicator page)",
+    "license_url": "https://data.worldbank.org/indicator/AG.LND.CREL.HA",
+    "accessed_utc": "2026-10-25T16:36:57.306329+00:00",
+    "status": "downloaded",
+    "sha256": "916f6a0b3ca1b08599cfd27e8999080aec6f2ab408e2f0bbd9f4fdf7d6b32259",
+    "crops": [
+      "cereals"
+    ],
+    "regions": [
+      "national"
+    ],
+    "evidence_type": "statistical_definition"
+  },
+  {
+    "document_id": "AG.LND.CREL.HA-DATA",
+    "title": "Land under cereal production (hectares) observations 2010-2023",
+    "author": "World Bank / FAO",
+    "date": "2026-10-08",
+    "url": "https://api.worldbank.org/v2/country/PAK;IND;BGD/indicator/AG.LND.CREL.HA?format=json&date=2010:2023&per_page=1000",
+    "kind": "dataset",
+    "path": "data/processed/cereals.csv",
+    "license": "CC BY 4.0 (WDI indicator page)",
+    "license_url": "https://data.worldbank.org/indicator/AG.LND.CREL.HA",
+    "accessed_utc": "2026-10-25T16:36:57.306329+00:00",
+    "status": "downloaded",
+    "sha256": "0bee7729e3a512b7c9c9bc12d9ae60b1213bc41c8b955702e38796cb4e5a5cd9"
+  },
+  {
+    "document_id": "usda-soil",
+    "title": "Soil Health",
+    "author": "USDA Natural Resources Conservation Service",
+    "date": "unknown (undated webpage)",
+    "url": "https://www.nrcs.usda.gov/conservation-basics/soil/soil-health",
+    "kind": "document",
+    "path": "data/corpus/usda-soil.txt",
+    "license": "US federal authored text: public domain in US; third-party items excluded; local-use snapshot",
+    "license_url": "https://www.usda.gov/policies-and-links",
+    "accessed_utc": "2026-10-25T16:36:57.306329+00:00",
+    "status": "unavailable",
+    "error": "Source download failed: https://www.nrcs.usda.gov/conservation-basics/soil/soil-health"
+  },
+  {
+    "document_id": "usda-cover",
+    "title": "Cover Crops for Soil Health",
+    "author": "USDA Natural Resources Conservation Service",
+    "date": "unknown (undated webpage)",
+    "url": "https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soils/cover-crops-for-soil-health",
+    "kind": "document",
+    "path": "data/corpus/usda-cover.txt",
+    "license": "US federal authored text: public domain in US; third-party items excluded; local-use snapshot",
+    "license_url": "https://www.usda.gov/policies-and-links",
+    "accessed_utc": "2026-10-25T16:36:57.306329+00:00",
+    "status": "unavailable",
+    "error": "Source download failed: https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soils/cover-crops-for-soil-health"
+  },
+  {
+    "document_id": "fao-water-candidate",
+    "title": "Irrigation Water Management: Crop Water Needs",
+    "author": "FAO",
+    "date": "unknown (verify publication)",
+    "url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+    "kind": "candidate",
+    "path": "",
+    "license": "Document-specific reuse review required; not downloaded",
+    "license_url": "https://www.fao.org/contact-us/terms/en/",
+    "accessed_utc": "2026-10-25T16:36:57.306329+00:00",
+    "status": "pending-license-review"
+  },
+  {
+    "document_id": "jpaa-2436",
+    "title": "Impact of supplemental irrigation through sprinkler raingun at alternate phenological stages of wheat crop",
+    "author": "Syed Haider Abbas; Zafar  Islam; Abdul Shakoor; Maqsood Qamar; Sikander Khan Tanveer; Imtiaz Hussain; Abid Majeed",
+    "date": "2024/08/21",
+    "url": "https://ojs.aiou.edu.pk/index.php/jpaa/article/view/2436",
+    "kind": "document",
+    "path": "data/corpus/jpaa-2436.pdf",
+    "license": "CC BY-NC 4.0 conservative use; publisher prose says CC BY 4.0 but DC.Rights says BY-NC 4.0",
+    "license_url": "https://ojs.aiou.edu.pk/index.php/jpaa/article/view/2436",
+    "accessed_utc": "2026-10-25T16:44:44.428828+00:00",
+    "status": "downloaded",
+    "sha256": "1bb1e9b268cf78ba5e2e0cce044204d2f613be976efc44abf4f0bca9599d1803",
+    "quality_notes": "Source inconsistency: abstract/results report 257.7 mm seasonal rainfall, but conclusion reports 225.3 mm. Treatment labels and units require domain review; do not convert this experiment into a general irrigation prescription.",
+    "crops": [
+      "wheat"
+    ],
+    "regions": [
+      "Islamabad",
+      "NARC"
+    ],
+    "evidence_type": "field_experiment"
+  }
+]
